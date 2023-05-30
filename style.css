@@ -84,8 +84,26 @@ img{
 
 .content {
     grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
+.col-wide {               /*Que se expande em todas as colunas*/
+    grid-column: 1/-1;
+}
+
+.imagem-1 {
+    grid-row: span 2;     /*Quero que expanda 2 linhas*/
+    align-self: end;
+}
+
+.imagem-2 {
+    align-self: end;
+}
 
 .anuncios {
     grid-area: anuncios;
